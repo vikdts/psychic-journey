@@ -12,3 +12,7 @@ class ProjectAdmin(admin.ModelAdmin):
     inlines = [ProjectImageInline] 
     search_fields = ('title', 'description')
     list_filter = ('tags',)
+
+class TagAdmin(admin.ModelAdmin):
+    list_display = ('name',)    
+    search_fields = ('name',)   
