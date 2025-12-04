@@ -9,6 +9,6 @@ class ProjectImageInline(admin.TabularInline):
 
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('title', 'link')
-    inlines = [] 
+    inlines = [ProjectImageInline] 
     search_fields = ('title', 'description')
     list_filter = ('tags',)
