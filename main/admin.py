@@ -18,3 +18,4 @@ class TagAdmin(admin.ModelAdmin):
     search_fields = ('name',)   
 
 admin.site.register(Tag, TagAdmin)
+admin.site.register(Project, ProjectAdmin)
