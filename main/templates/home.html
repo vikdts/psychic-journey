@@ -1,10 +1,18 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block title %}
-Home
-{% endblock title %} 
+  Home
+{% endblock %}
+
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %}
 
 {% block content %}
-<p>home</p>
-{% endblock content %}
+  <p>home</p>
+{% endblock %}
+
+{% block extra_js %}
+  <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
