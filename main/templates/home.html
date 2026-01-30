@@ -10,7 +10,13 @@
 {% endblock %}
 
 {% block content %}
-  <p>home</p>
+  <div class="filters">
+    <input type="text" id="name-search" placeholder="Search by name.."/>
+    <div class="tags-list">
+      {% for tag in tags%}
+      {% endfor %}
+    </div>
+  </div>
 {% endblock %}
 
 {% block extra_js %}
