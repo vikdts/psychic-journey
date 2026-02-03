@@ -10,7 +10,14 @@
 {% endblock %}
 
 {% block content %}
-  <p>project</p>
+  <div class="project-card">
+    <div class="project-info">
+      <h1>{{project.title}}</h1>
+      <p><a href="{{project.link}}">Project link</a></p>
+      <p>{{project.description}}</p>
+      <a href="{% url 'home' %}">Back to Home</a>
+    </div>
+  </div>
 {% endblock %}
 
 {% block extra_js %}
